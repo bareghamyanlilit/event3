@@ -1,1 +1,20 @@
 @import "tailwindcss";
+
+@font-face {
+  font-family:"ArmAllegroU" ;
+  src: url('/font/ArmAllegroU.ttf');
+}
+
+@font-face {
+  font-family:"ArmDecorativeU" ;
+  src: url('/font/ArmDecorativeU-Italic.ttf');
+}
+
+.FontArmAllegroU{
+  font-family: "ArmAllegroU";
+}
+
+.FontArmDecorativeU{
+  font-family: "ArmDecorativeU";
+  
+}

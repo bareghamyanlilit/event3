@@ -1,8 +1,58 @@
+import Image from "next/image";
+import { TimeBox } from "./TimeBox";
+import { Calendar } from "./Calendar";
+import { Program } from "./Program";
 
 export function Home() {
   return (
     <div>
-      
+      <div
+        className="FontArmAllegroU tracking-0 h-screen bg-cover bg-center flex flex-col justify-between text-white p-7 text-3xl"
+        style={{ backgroundImage: "url('/img1.jpg')" }}
+      >
+        <div>
+          <p className="max-inline-min">Ավարտական Հանդես</p>
+          <h1 className="FontArmDecorativeU text-[#F8F8F836] text-8xl max-inline-min ">12 Ա</h1>
+        </div>
+        <p className="text-end">Վերջին զանգ</p>
+      </div>
+
+      <div className="FontArmDecorativeU italic text-center py-7 bg-[#EFEFEF]">
+        <h3 className="text-xl px-7">
+          Ամեն սկիզբ ունի ավարտ, Ամեն ավարտ մի նոր սկիզբ է․․․
+        </h3>
+        <Image
+          src="/icon1.png"
+          alt="icon1"
+          width={500}
+          height={500}
+          className="w-full"
+        />
+        <h3 className="text-2xl px-7">Մեր միջոցառմանը մնաց</h3>
+        <TimeBox />
+      </div>
+
+      <p className="FontArmDecorativeU italic text-xl p-7 text-center">
+        Սիրով հրավիրում ենք Ձեզ ներկա գտնվելու մեր ՎԵՐՋԻՆ ԶԱՆԳ հանդիսավոր
+        միջոցառմանը։ 23 Մայիսի, 2026 Ժամը՝ 10:00 Մեր հարազատ դպրոցում
+      </p>
+
+      <Image
+        src="/img2.jpg"
+        alt="icon1"
+        width={500}
+        height={500}
+        className="w-full p-7 bg-[#EFEFEF]"
+      />
+
+      <div className="FontArmDecorativeU text-xl italic p-7 grid gap-2">
+        <p className="text-center">Սիրով սպասում ենք</p>
+        <hr className="w-40 my-4 m-auto"/>
+        <p className="text-center">Պահպանիր Օրը</p>
+        <Calendar year={2026} month={3} highlightDay={20}/>
+      </div>
+
+      <Program/>
     </div>
-  )
+  );
 }
