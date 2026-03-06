@@ -2,12 +2,12 @@
 
 @font-face {
   font-family:"ArmAllegroU" ;
-  src: url('/font/ArmAllegroU.ttf');
+  src: url('/font/ArmAllegroU.woff2');
 }
 
 @font-face {
   font-family:"ArmDecorativeU" ;
-  src: url('/font/ArmDecorativeU-Italic.ttf');
+  src: url('/font/ArmenianDecorativeU-Italic.woff2');
 }
 
 .FontArmAllegroU{

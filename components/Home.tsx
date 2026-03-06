@@ -12,7 +12,7 @@ export function Home() {
       >
         <div>
           <p className="max-inline-min">Ավարտական Հանդես</p>
-          <h1 className="FontArmDecorativeU text-[#F8F8F836] text-8xl max-inline-min ">12 Ա</h1>
+          <h1 className="FontArmDecorativeU text-[#F8F8F836] mt-7 text-8xl max-inline-min ">12 Ա</h1>
         </div>
         <p className="text-end">Վերջին զանգ</p>
       </div>
