@@ -3,7 +3,7 @@ import Image from "next/image";
 import { TimeBox } from "./TimeBox";
 import { Calendar } from "./Calendar";
 import { Program } from "./Program";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { MusicPlayer } from "./music";
 import { FaMusic } from "react-icons/fa";
 import { anim, txt1, txt2 } from "@/data/data";
@@ -11,6 +11,21 @@ import { motion } from "framer-motion";
 
 export function Home() {
   const [isPlaying, setIsPlaying] = useState(false);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setLoading(false);
+    }, 2000); 
+    }, []);
+
+  if (loading) {
+    return (
+      <div className="FontArmenianDecorativeU flex items-center justify-center h-screen text-3xl">
+        Loading...
+      </div>
+    );
+  }
   return (
     <div className="text-center overflow-hidden  FontArmenianDecorativeU ">
       {/* music button */}
