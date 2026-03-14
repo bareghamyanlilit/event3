@@ -46,27 +46,28 @@ export function Home() {
       </div>
       <TimeBox />
 
-      <div className=" p-7 ">
-        <div className="py-10 ">
+      <div className=" px-7 ">
+        <div className="py-15 ">
           <motion.h3 {...anim} className=" relative text-[32px]">
             ՍԻՐԵԼԻՆԵՐ
             <p className=" absolute -z-1 text-5xl top-3 left-1/2 -translate-x-1/2 text-[#5800001A]">
               ՍԻՐԵԼԻՆԵՐ
             </p>
           </motion.h3>
-          <motion.p {...anim} className="  text-xl py-5">
+          <motion.p {...anim} className="  text-xl mt-10">
             {txt1}
           </motion.p>
-
-          <Image
-            src="/img2.jpg"
-            alt="icon1"
-            width={500}
-            height={500}
-            className="w-full h-60 object-cover rounded-xl "
-          />
         </div>
       </div>
+
+      <Image
+        src="/img2.jpg"
+        alt="icon1"
+        width={500}
+        height={500}
+        className="w-full h-60 object-cover rounded-xl mb-20 "
+      />
+
       <div className=" w-full text-[#580000] ">
         <div className="whitespace-nowrap animate-marquee-2 text-4xl -rotate-2  -translate-x-full">
           Սեր Սեր Սեր Սեր Սեր Սեր Սեր Սեր Սեր Սեր Սեր Սեր Սեր Սեր Սեր Սեր Սեր
@@ -105,7 +106,7 @@ export function Home() {
         alt="icon1"
         width={500}
         height={500}
-        className="w-full object-cover my-10 mb-25 "
+        className="w-full object-cover my-15 mb-30 "
       />
 
       <div className="relative">
@@ -142,7 +143,7 @@ export function Home() {
         <Program />
       </div>
 
-      <div className="  relative  h-140 mb-15"> 
+      <div className="  relative  h-140 mb-15">
         <div className=" absolute top-15  bg-[#F4F4F4] w-full h-140 -z-1"></div>
         <Image
           src="/img5.jpg"
@@ -154,7 +155,7 @@ export function Home() {
         <p className="FontAkronim text-[300px] tracking-[30%] text-[#580000] ">
           LO
         </p>
-        <p  className="FontAkronim text-[300px] tracking-[30%] text-[#580000] -mt-45 ">
+        <p className="FontAkronim text-[300px] tracking-[30%] text-[#580000] -mt-45 ">
           VE
         </p>
       </div>
@@ -166,8 +167,6 @@ export function Home() {
           Մասնակցության մասին Խնդրում ենք Տեղեկացնել մինչև <br /> Ապրիլի 10-ը
         </span>
       </motion.p>
-
-
     </div>
   );
 }
