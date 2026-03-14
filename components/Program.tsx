@@ -6,9 +6,9 @@ export function Program() {
   return (
     <div className="FontArmenianDecorativeU p-7">
       <motion.h3 {...anim} className=" relative text-[32px] mb-45">
-        Ժամանակացույց
+        ժԱՄԱՆԱԿԱՑՈՒՅՑ
         <p className=" absolute -z-1 text-5xl top-3 left-1/2 -translate-x-1/2 text-[#5800001A]">
-          Ժամանակացույց
+          ժԱՄԱՆԱԿԱՑՈՒՅՑ
         </p>
       </motion.h3>
       <div className="relative flex flex-col gap-20">

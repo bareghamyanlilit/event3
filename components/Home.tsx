@@ -49,9 +49,9 @@ export function Home() {
       <div className=" p-7 ">
         <div className="py-10 ">
           <motion.h3 {...anim} className=" relative text-[32px]">
-            Սիրելիներ
+            ՍԻՐԵԼԻՆԵՐ
             <p className=" absolute -z-1 text-5xl top-3 left-1/2 -translate-x-1/2 text-[#5800001A]">
-              Սիրելիներ
+              ՍԻՐԵԼԻՆԵՐ
             </p>
           </motion.h3>
           <motion.p {...anim} className="  text-xl py-5">
