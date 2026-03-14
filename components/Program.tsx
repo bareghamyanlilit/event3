@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 export function Program() {
   return (
-    <div className="FontArmenianDecorativeU p-7">
+    <div className="FontArmDecorativeU p-7">
       <motion.h3 {...anim} className=" relative text-[32px] mb-45">
         ժԱՄԱՆԱԿԱՑՈՒՅՑ
         <p className=" absolute -z-1 text-5xl top-3 left-1/2 -translate-x-1/2 text-[#5800001A]">

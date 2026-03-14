@@ -21,13 +21,13 @@ export function Home() {
 
   if (loading) {
     return (
-      <div className="FontArmenianDecorativeU flex items-center justify-center h-screen text-3xl">
+      <div className="FontArmDecorativeU flex items-center justify-center h-screen text-3xl">
         Loading...
       </div>
     );
   }
   return (
-    <div className="text-center overflow-hidden  FontArmenianDecorativeU ">
+    <div className="text-center overflow-hidden  FontArmDecorativeU ">
       {/* music button */}
       <div>
         <button
@@ -61,7 +61,7 @@ export function Home() {
       </div>
       <TimeBox />
 
-      <div className="FontArmenianDecorativeU px-7 ">
+      <div className="FontArmDecorativeU px-7 ">
         <div className="py-15 ">
           <motion.h3 {...anim} className=" relative text-[32px]">
             ՍԻՐԵԼԻՆԵՐ
@@ -140,7 +140,7 @@ export function Home() {
             height={500}
             className="-top-10 absolute -z-1 w-full "
           />
-          <div className="FontArmenianDecorativeU flex justify-around ml-4 -rotate-7">
+          <div className="FontArmDecorativeU flex justify-around ml-4 -rotate-7">
             <div className="flex flex-col gap-10">
               <p className="text-sm">Կիրակի</p>
               <p className="text-4xl">12</p>
