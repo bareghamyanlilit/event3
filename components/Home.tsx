@@ -11,21 +11,21 @@ import { motion } from "framer-motion";
 
 export function Home() {
   const [isPlaying, setIsPlaying] = useState(false);
-  const [loading, setLoading] = useState(true);
+  // const [loading, setLoading] = useState(true);
 
-  useEffect(() => {
-    setTimeout(() => {
-      setLoading(false);
-    }, 2000); 
-    }, []);
+  // useEffect(() => {
+  //   setTimeout(() => {
+  //     setLoading(false);
+  //   }, 2500);
+  // }, []);
 
-  if (loading) {
-    return (
-      <div className="FontArmDecorativeU flex items-center justify-center h-screen text-3xl">
-        Loading...
-      </div>
-    );
-  }
+  // if (loading) {
+  //   return (
+  //     <div className="FontArmDecorativeU flex items-center justify-center h-screen text-3xl">
+  //       Loading...
+  //     </div>
+  //   );
+  // }
   return (
     <div className="text-center overflow-hidden  FontArmDecorativeU ">
       {/* music button */}

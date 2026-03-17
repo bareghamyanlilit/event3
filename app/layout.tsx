@@ -3,13 +3,13 @@ import "./globals.css";
 import { Footer } from "@/components/footer";
 
 export const metadata: Metadata = {
-  title: "Վերջին զանգ",
-  description: "Վերջին զանգ",
+  title: "Արման և Մանե",
+  description: "Արման և Մանե",
   openGraph: {
-    title: "Վերջին զանգի հրավիրատոմս",
-    description: "Ամեն ավարտ մի նոր սկիզբ է․․․",
-    url: "https://verjin-zang-2.vercel.app/",
-    siteName: "Վերջին զանգ",
+    title: "Արմանի և Մանեի հարսանեկան հրավիրատոմս",
+    description: "Հարսանեկան հրավիրատոմս",
+    url: "https://wedding-invitation-3.vercel.app/",
+    siteName: "Արման և Մանե",
     images: [
       {
         url: "/img1.jpg",
@@ -30,7 +30,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className="m-auto max-w-md text-[#000000CC]"
+        className="m-auto max-w-md text-[#000000CC] bg-white"
         style={{ whiteSpace: "pre-line" }}
       >
         {children}
