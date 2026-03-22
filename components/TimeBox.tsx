@@ -38,7 +38,7 @@ export function TimeBox() {
   return (
     <motion.section {...anim}   className="FontArmAllegroU -mt-35 mb-10 flex flex-col  text-center   px-6 py-5">
       {timeLeft.finished ? (
-        <div className="text-white text-2xl font-semibold px-4 bg-red-500 rounded-xl shadow">
+        <div className="text-white text-2xl font-semibold px-4  rounded-xl shadow">
           Միջոցառումն արդեն սկսվել է 🎉
         </div>
       ) : (
