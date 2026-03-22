@@ -16,7 +16,7 @@ export function Program() {
           return (
             <div
               key={i}
-              className={`${i % 2 == 0 ? " self-end" : "self-start"} ${i == 2 ? "mt-34" : ""}  ${i == 3 ? "mt-10" : ""}`}
+              className={`${i % 2 == 0 ? " self-end" : "self-start"} ${i == 2 ? "mt-55" : ""}  ${i == 3 ? "mt-10" : ""}`}
             >
               <motion.p {...anim} className="w-max text-xl relative">
                 {el.title}
