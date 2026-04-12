@@ -1,6 +1,7 @@
 import { anim, program } from "@/data/data";
 import Image from "next/image";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 export function Program() {
   return (
@@ -11,12 +12,13 @@ export function Program() {
           ժԱՄԱՆԱԿԱՑՈՒՅՑ
         </p>
       </motion.h3>
-      <div className="relative flex flex-col gap-20">
+     <div className="relative flex flex-col gap-30  max-[455px]:gap-25  max-[440px]:gap-22 max-[430px]:gap-20 max-[425px]:gap-17 max-[415px]:gap-16 max-[405px]:gap-13  max-[395px]:gap-11   max-[385px]:gap-8  max-[375px]:gap-6 max-[365px]:gap-3 max-[355px]:gap-0">
         {program.map((el: any, i: number) => {
           return (
-            <div
+            <Link
+              href={`${el.address ? `https://www.google.com/maps/search/${el.address}` : "#"}`}
               key={i}
-              className={`${i % 2 == 0 ? " self-end" : "self-start"} ${i == 2 ? "mt-55" : ""}  ${i == 3 ? "mt-10" : ""}`}
+              className={`${i % 2 == 0 ? " self-end" : "self-start"} ${i == 2 ? "mt-55 max-[455px]:mt-50  " : ""}  ${i == 3 ? "mt-10   max-[445px]:mt-28  max-[405px]:mt-28 max-[385px]:mt-25" : ""}`}
             >
               <motion.p {...anim} className="w-max text-xl relative">
                 {el.title}
@@ -27,7 +29,7 @@ export function Program() {
               <motion.h3 {...anim} className={`${i % 2 == 0 ? " text-end" : "text-start"} text-[28px]`}>
                 {el.time}
               </motion.h3>
-            </div>
+            </Link>
           );
         })}
       </div>
