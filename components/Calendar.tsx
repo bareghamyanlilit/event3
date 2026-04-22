@@ -3,8 +3,8 @@
 import Image from "next/image";
 
 export function Calendar({ year = 2025, month = 9, highlightDay = 8 }) {
-  const weekDays = ["Երկ", "Երք", "Չրք", "Հնգ", "Ուրբ", "Շբթ", "Կիր"];
 
+  const weekDays = ["Կիր","Երկ", "Երք", "Չրք", "Հնգ", "Ուրք", "Շբթ"];
   const firstDayRaw = new Date(year, month - 1, 1).getDay();
   const firstDay = (firstDayRaw + 6) % 7;
   
